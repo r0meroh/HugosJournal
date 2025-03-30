@@ -1,0 +1,4 @@
+Developers tend to focus on workload troubleshooting
+Operations tend to focus on resource based troubleshooting
+
+Software abstractions make up the distributed systems (including mircroservices)
