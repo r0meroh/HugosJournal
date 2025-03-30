@@ -1,4 +1,24 @@
+### General approach
 Developers tend to focus on workload troubleshooting
 Operations tend to focus on resource based troubleshooting
 
 Software abstractions make up the distributed systems (including mircroservices)
+
+## 3 Golden Signals
+### Logs
+Append only data structure
+Timestamped with a brief message of what took place
+Unstandardized for the most part (can include any information)
+To combat log noise, key-value pairing was incorporated as well as structured logging
+Logging agents were soon built to store logs and ability to search through them
+
+### Metrics
+4 main type of metrics
+Counter (up/down)
+Gauge (up/down)
+Histogram(only positive)
+Summary 
+
+### Traces
+Allows to follow chain of events of a system
+Can tell a story and provide a "larger" context for what is taking place
