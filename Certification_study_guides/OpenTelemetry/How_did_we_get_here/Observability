@@ -22,3 +22,42 @@ Summary
 ### Traces
 Allows to follow chain of events of a system
 Can tell a story and provide a "larger" context for what is taking place
+
+
+### Issues with different telemetry approaches
+#### siloed Telemetry
+* lacks quality of telemetry data
+* Manual effort to create relationships between individual non-correllated data
+* Need to manually write queries based of a hypothesis for what needs to be found
+
+#### Lack of standards leads to low quality
+* root-cause analysis are difficult when telemetry data lacks consistency
+* Difficult to correlate events across services
+* Fragmented and disjointed views of system behavior
+
+#### No built in instrumentation is open sourced
+* Difficult to integrate into systems
+* vendor specific
+* Most solutions are layered built on top of other software
+* New version of software increases overhead
+* Leads to vendor lock in
+
+### What is Open Telemetry?
+* Unified
+* vendor neutral 
+* Cross-platform
+
+### What Open Telemetry is NOT
+* Not an all in one solution
+* Does not replace full-fledged monitoring platforms
+* Not a data storage or Dashboard solution
+* Open Telemetry focuses on collection and exporting of telemetry, not storing it
+* Requires configuration in order to work with other tools, does not provide out-of-the-box monitoring and alerting
+* does not automatically optimize application performance
+
+### Benefits of Open Telemetry
+* Configure once and use everywhere
+* Open telemetry is meant to be long lasting and stable states should not become compromised regardless of time/usage
+* Open Telemetry separrates telemetry data creation from analysis. Multi-vendor support incentivices competition
+* Developers can instrument projects from the beginning without needing a vendor specific solution immediately 
+* Open Telemetry improves how we use telemetry and attempts to correlate different signals instead of keeping them separated
